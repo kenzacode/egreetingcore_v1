@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    
+    header<br />
+    form <br />
+            -container<br />
+            -format form:opique
+            -bootstrap<br />
+            -modal<br />
+            -container<br />
+            -character count<br />
+    footer <br/>
+    music<br />
+    reactive design(depends on screen size)<br />
+    preview core<br />
+    valdiation in core<br />
+
+    <br/>
+    //partial of HTML page
+    <div class="container">
+        <div class="row">
+            <div class="card">
+                @Html.Partial("_Card")
+            </div>
+            <div class="form">
+                @Html.Partial("_Preview")
+                @Html.Partial("_Form")
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,44 +1,14 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+
 }
 
-
-You have sent a card to @Model.name  
-
-
-<h1>BOO</h1>
-
- <!--FORM SECTION-->
-<div id="ecard">
-    <form method="post" onsubmit="myFunction()">
-
-        <label for="to">To</label>
-        <input type="text" id="fname" name="name" placeholder="To.."><br />
-
-        <label for="sendto">Send To Email:</label>
-        <input type="text" id="sendto" name="sendto" placeholder="Send to.."><br />
-
-        <label for="from">From</label>
-        <input type="text" id="from" name="from" placeholder="From.."><br />
-
-        <label for="subject">Subject</label>
-        <textarea id="text" id="subject" name="subject" placeholder="Subject"></textarea><br />
-
-        <label for="message">Message</label>
-        <textarea id="subject" id="message" name="message' 'placeholder="Write something.." style="height:100px"></textarea><br />
-
-        <input id="submitbutton" type="submit" value="Deliver">
-    </form>
-</div>
+@Html.Partial("_Card")
+@Html.Partial("_Form")
+@Html.Partial("_Preview")
 
 
-<script>
-    function myFunction() {
-        var first = document.getElementById("first").value;
-        alert(`${first} will be spooked.`)
-    }
-</script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
