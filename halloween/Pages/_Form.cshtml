@@ -8,9 +8,9 @@
     <form method="post" onsubmit="myFunction()">
 
         <div class="form-group">
-            <label for="receivername">@Html.DisplayNameFor(model => model.bridgeGreetings.ReceiverName)</label>
-            @Html.TextBoxFor(model => model.bridgeGreetings.ReceiverName, new { type = "type", @class = "form-control", placeholder = "First and Last Name", maxlength = "100" })
-            @Html.ValidationMessageFor(model =>model.bridgeGreetings.ReceiverName)
+            <label for="receivername">@Html.DisplayNameFor(model => model.bridgeGreetings.receiverName)</label>
+            @Html.TextBoxFor(model => model.bridgeGreetings.receiverName, new { type = "type", @class = "form-control", placeholder = "First and Last Name", maxlength = "100" })
+            @Html.ValidationMessageFor(model =>model.bridgeGreetings.receiverName)
             <div class="countdown"></div>
         </div>
 

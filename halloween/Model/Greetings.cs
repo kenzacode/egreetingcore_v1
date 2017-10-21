@@ -13,12 +13,12 @@ namespace halloween.wwwroot.Model
         [Display(Prompt = "Your friend's name")]
         [Required(ErrorMessage = "Required")]
         [StringLength(100, MinimumLength = 3, ErrorMessage = "You must enter between 3 to 100 characters")]
-        public string receivername { get; set; }
+        public string receiverName { get; set; }
 
         [DisplayName("Your friend's email")]
         [Display(Prompt = "username@domain.com")]
         [Required(ErrorMessage = "Required")]
-        public string receiveremail { get; set; }
+        public string receiverEmail { get; set; }
 
         [DisplayName("Subject")]
         [Required(ErrorMessage = "Required")]
@@ -30,11 +30,11 @@ namespace halloween.wwwroot.Model
 
         [DisplayName("Sender's Name")]
         [Required(ErrorMessage = "Required")]
-        public string sendername { get; set; }
+        public string senderName { get; set; }
 
         [DisplayName("Sender's Email")]
         [Required(ErrorMessage = "Required")]
-        public string senderemail { get; set; }
+        public string senderEmail { get; set; }
 
         [Required(ErrorMessage = "Required")]
         public string agree { get; set; }
