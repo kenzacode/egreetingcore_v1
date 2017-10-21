@@ -1,38 +1,6 @@
-﻿@page
-@model IndexModel
+﻿@model IndexModel
 @{
 }
-
-<label asp-for="bridgeGreetings.receiverName"></label>
-<input type="text" asp-for="bridgeGreetings.receiverName">
-<div asp-validation-for="bridgeGreetings.receiverName" class="text-danger"></div>
-
-<label asp-for="bridgeGreetings.receiverEmail"></label>
-<input type="text" asp-for="bridgeGreetings.receiverEmail">
-<div asp-validation-for="bridgeGreetings.receiverEmail" class="text-danger"></div>
-
-<label asp-for="bridgeGreetings.subject"></label>
-<input type="text" asp-for="bridgeGreetings.subject">
-<div asp-validation-for="bridgeGreetings.subject" class="text-danger"></div>
-
-<label asp-for="bridgeGreetings.message"></label>
-<input type="text" asp-for="bridgeGreetings.message">
-<div asp-validation-for="bridgeGreetings.message" class="text-danger"></div>
-
-<label asp-for="bridgeGreetings.senderName"></label>
-<input type="text" asp-for="bridgeGreetings.senderName">
-<div asp-validation-for="bridgeGreetings.senderName" class="text-danger"></div>
-
-<label asp-for="bridgeGreetings.senderEmail"></label>
-<input type="text" asp-for="bridgeGreetings.senderEmail">
-<div asp-validation-for="bridgeGreetings.senderEmail" class="text-danger"></div>
-
-<label asp-for="bridgeGreetings.agree"></label>
-<input type="text" asp-for="bridgeGreetings.agree">
-<div asp-validation-for="bridgeGreetings.agree" class="text-danger"></div>
-
-
-
 
 
 @Html.Partial("_Card")
