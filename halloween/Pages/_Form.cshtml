@@ -7,29 +7,22 @@
 
     <form method="post" onsubmit="myFunction()">
 
-
-
         <div class="form-group">
-            <label for="to">To</label>
-            <input type="text" name="sendto" placeholder="To.." maxlength="30">
+            <label for="receivername">@Html.DisplayNameFor(model => model.bridgeGreetings.ReceiverName)</label>
+            @Html.TextBoxFor(model => model.bridgeGreetings.ReceiverName, new { type = "type", @class = "form-control", placeholder = "First and Last Name", maxlength = "100" })
+            @Html.ValidationMessageFor(model =>model.bridgeGreetings.ReceiverName)
             <div class="countdown"></div>
         </div>
 
         <div class="form-group">
-            <label for="sendto">Send To Email:</label>
+            <label for="receiveremail">Send To Email:</label>
             <input type="text" name="sendtoemail" placeholder="Send to.." maxlength="30">
             <div class="countdown"></div>
         </div>
 
         <div class="form-group">
-            <label for="from">From</label>
-            <input type="text" name="from" placeholder="From.." maxlength="30">
-            <div class="countdown"></div>
-        </div>
-
-        <div class="form-group">
             <label for="subject">Subject</label>
-            <input type="text" name="subject" placeholder="Subject" maxlength="30"></input>
+            <input type="text" name="subject" placeholder="Subject" maxlength="30">
             <div class="countdown"></div>
         </div>
 
@@ -38,6 +31,21 @@
             <textarea name="message" placeholder="Write something.." style="height:100px" maxlength="30"></textarea>
             <div class="countdown"></div>
         </div>
+
+        <div class="form-group">
+            <label for="sendername">From Name</label>
+            <input type="text" name="from" placeholder="From.." maxlength="30">
+            <div class="countdown"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="senderemail">From Email</label>
+            <input type="text" name="from" placeholder="From.." maxlength="30">
+            <div class="countdown"></div>
+        </div>
+
+
+
 
         <input id="submitbutton" type="submit" value="Preview" class="btn">
     </form>

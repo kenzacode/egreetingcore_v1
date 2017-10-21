@@ -1,14 +1,54 @@
 ﻿@page
 @model IndexModel
 @{
-
 }
 
+<label asp-for="bridgeGreetings.receivername"></label>
+<input type="text" asp-for="bridgeGreetings.receivername">
+<div asp-validation-for="bridgeGreetings.subject" class="text-danger"></div>
+
+<label asp-for="bridgeGreetings.receivername"></label>
+<input type="text" asp-for="bridgeGreetings.receiveremail">
+<div asp-validation-for="bridgeGreetings.subject" class="text-danger"></div>
+
+<label asp-for="bridgeGreetings.receivername"></label>
+<input type="text" asp-for="bridgeGreetings.subject">
+<div asp-validation-for="bridgeGreetings.subject" class="text-danger"></div>
+
+<label asp-for="bridgeGreetings.receivername"></label>
+<input type="text" asp-for="bridgeGreetings.message">
+<div asp-validation-for="bridgeGreetings.subject" class="text-danger"></div>
+
+<label asp-for="bridgeGreetings.receivername"></label>
+<input type="text" asp-for="bridgeGreetings.sendername">
+<div asp-validation-for="bridgeGreetings.subject" class="text-danger"></div>
+
+<label asp-for="bridgeGreetings.receivername"></label>
+<input type="text" asp-for="bridgeGreetings.senderemail">
+<div asp-validation-for="bridgeGreetings.subject" class="text-danger"></div>
+
+<label asp-for="bridgeGreetings.receivername"></label>
+<input type="text" asp-for="bridgeGreetings.agree">
+<div asp-validation-for="bridgeGreetings.subject" class="text-danger"></div>
+
+<label asp-for="bridgeGreetings.receivername"></label>
+<input type="text" asp-for="bridgeGreetings.senderemail">
+<div asp-validation-for="bridgeGreetings.subject" class="text-danger"></div>
+
+<label asp-for="bridgeGreetings.receivername"></label>
+<input type="text" asp-for="bridgeGreetings.senderemail">
+<div asp-validation-for="bridgeGreetings.subject" class="text-danger"></div>
+
+
+
 @Html.Partial("_Card")
-@Html.Partial("_Form")
-@Html.Partial("_Preview")
 
 
-
-
-
+@if (Model.isPreviewPage)
+{
+    @Html.Partial("_Preview")
+}
+else
+{
+    @Html.Partial("_Form")
+}
